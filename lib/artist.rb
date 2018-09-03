@@ -12,6 +12,8 @@ class Artist
       song.artist = self
   end
 
+  artist = Artist.new("DMX")
+  artist.add_song_by_name("party up")
   def add_song_by_name(name)
     song = Song.new(name)
     song.artist = self
